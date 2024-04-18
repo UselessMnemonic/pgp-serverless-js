@@ -2,7 +2,7 @@
 PGP Server(less) is a proof-of-concept "serverless" PGP Keyserver designed to be deployed as an AWS Lambda function. It
 supports searching and retrieving PGP public keys over the `HKP` protocol.
 
-An example deployment is reachable at `hkps://keys.uselessmnemonic.com`
+An example deployment is reachable at [`hkps://keys.uselessmnemonic.com`](https://keys.uselessmnemonic.com/pks/lookup?op=index&search=chris)
 
 ### Notes on the Source
 You will notice a heavy use of the result pattern, because I despise exceptions in JavaScript. `Result`, `AsyncResult`,
