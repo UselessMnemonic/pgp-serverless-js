@@ -4,6 +4,10 @@ supports searching and retrieving PGP public keys over the `HKP` protocol.
 
 An example deployment is reachable at [`hkps://keys.uselessmnemonic.com`](https://keys.uselessmnemonic.com/pks/lookup?op=index&search=chris)
 
+When deployed on AWS Lambda, two environment variables are expected to be defined:
+1. `PGP_TABLE_NAME` should provide the name of the DynamoDB Table containing entries for each key (in the same region)
+2. `PGP_BUCKET_NAME` should provide the name of the S3 Bucket containing PGP public keys (in the same region)
+
 ### Notes on the Source
 You will notice a heavy use of the result pattern, because I despise exceptions in JavaScript. `Result`, `AsyncResult`,
 and `AsyncResultGenerator` are designed to capture exceptions and propagate them in a controlled manner.
