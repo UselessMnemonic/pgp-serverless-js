@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "CommonJS",
+        "skipLibCheck": true,
+
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "sourceMap": false,
+
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "preserveConstEnums": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+    },
+    "include": ["./src"],
+    "exclude": ["node_modules"]
+}
